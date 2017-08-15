@@ -1,0 +1,11 @@
+.header
+  h1= title
+ p
+.body
+ p= body
+.footer
+div= By
+a(href="http://abc.com/#{author.sachin4java}")= author.name
+ ul
+  each tag, index in tags
+   li= tag
