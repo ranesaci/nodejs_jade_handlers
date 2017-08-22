@@ -1,0 +1,15 @@
+extends layout
+block page
+  - var menu = 'login'
+block content
+  .col-md-6.col-md-offset-1
+    h2 Log in
+    div= error
+    div
+      form(action="/login", method="POST")
+        p
+          input.form-control(name="email", type="text", placeholder="sachin4java")
+        p
+          input.form-control(name="password", type="password", placeholder="***")
+        p
+          button.btn.btn-lg.btn-primary.btn-block(type="submit") Log in
